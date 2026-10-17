@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Entre Vetes · Pernileria delicatessen · Lloret de Mar</title>
+<meta name="description" content="Entre Vetes, pernileria delicatessen en el Carrer de la Vila, 6 de Lloret de Mar, al lado de la Iglesia. Jamón ibérico cortado a cuchillo, quesos DOP, embutidos, vinos y una terraza para degustarlos. También en Blanes.">
+<meta name="theme-color" content="#0E0B0A">
+<meta property="og:title" content="Entre Vetes · Lloret de Mar">
+<meta property="og:description" content="Jamón ibérico a cuchillo, quesos y vinos al lado de la Iglesia de Lloret.">
+<meta property="og:image" content="assets/img/5j-plato.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%230E0B0A'/%3E%3Ccircle cx='32' cy='32' r='27' fill='none' stroke='%23C2333A' stroke-width='3'/%3E%3Cpath d='M17 38c8-10 16 6 30-8' stroke='%23F2E4CF' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3Cpath d='M19 27c7-4 12 3 24-3' stroke='%23F2E4CF' stroke-width='2' fill='none' stroke-linecap='round' opacity='.6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Onest:wght@300;400;500;600&family=Yellowtail&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ ENTRADA ============ -->
+<div class="intro" id="intro" aria-hidden="true">
+  <svg class="intro__vein" viewBox="0 0 600 120" preserveAspectRatio="none"><path d="M0 70 C 90 20, 160 110, 260 60 S 430 10, 600 58" /></svg>
+  <p class="intro__name">Entre vetes</p>
+  <p class="intro__sub">Pernileria · Delicatessen</p>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="logo" href="#top" aria-label="Entre Vetes, inicio">Entre vetes</a>
+  <nav class="nav__links" aria-label="Secciones">
+    <a href="#corte">El corte</a>
+    <a href="#precinto">El precinto</a>
+    <a href="#vitrina">La vitrina</a>
+    <a href="#mostrador">Mostrador</a>
+    <a href="#visita">Visítanos</a>
+  </nav>
+  <span class="live" data-live><i></i><span data-live-text>Horario</span></span>
+  <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Menú"><span></span><span></span></button>
+</header>
+<div class="drawer" id="drawer">
+  <a href="#corte">El corte</a><a href="#precinto">El precinto</a><a href="#vitrina">La vitrina</a><a href="#mostrador">Mostrador</a><a href="#visita">Visítanos</a>
+  <p class="live" data-live><i></i><span data-live-text>Horario</span></p>
+</div>
+
+<main id="top">
+
+  <!-- ============ PORTADA ============ -->
+  <section class="hero">
+    <canvas class="hero__veins" id="veins" aria-hidden="true"></canvas>
+    <div class="hero__copy">
+      <p class="kicker">Pernileria · Delicatessen · Lloret de Mar</p>
+      <h1 class="hero__title"><span class="ln"><span>Entre</span></span><span class="ln"><span><em>vetes</em></span></span></h1>
+      <p class="hero__lead">Jamón ibérico cortado a cuchillo, quesos con denominación, embutidos y vinos. Al lado de la Iglesia, con terraza para probarlo todo sin prisa.</p>
+      <div class="hero__cta">
+        <a class="btn btn--meat" href="#corte"><i class="ph ph-knife"></i><span>Corta una loncha</span></a>
+        <a class="btn btn--line" href="#visita"><span>Carrer de la Vila, 6</span><i class="ph ph-arrow-down-right"></i></a>
+      </div>
+      <p class="hero__rate"><b>4,8</b><span class="stars" aria-hidden="true">★★★★★</span><span>241 reseñas en Google</span></p>
+    </div>
+    <figure class="hero__pic">
+      <img src="assets/img/5j-pata.jpg" alt="Jamón Cinco Jotas en el jamonero, con la cara recién cortada" fetchpriority="high">
+      <figcaption>Cinco Jotas · 100 % ibérico de bellota</figcaption>
+    </figure>
+    <div class="ticker" aria-hidden="true"><div class="ticker__in" id="ticker"></div></div>
+  </section>
+
+  <!-- ============ MANIFIESTO ============ -->
+  <section class="manifesto">
+    <div class="manifesto__pics">
+      <figure class="mp mp--a" data-speed="-.12"><img src="assets/img/tienda.jpg" alt="La tienda de Entre Vetes en el Carrer de la Vila, con las mesas altas de la terraza" loading="lazy"><figcaption>Carrer de la Vila, 6</figcaption></figure>
+      <figure class="mp mp--b" data-speed=".1"><img src="assets/img/plato-jamon.jpg" alt="Plato de jamón ibérico cortado a cuchillo en la terraza" loading="lazy"></figure>
+    </div>
+    <div class="manifesto__copy">
+      <p class="kicker">Por qué «Entre vetes»</p>
+      <p class="manifesto__txt" id="manifesto">Las vetas son esas líneas finas de grasa infiltrada que hacen que un buen ibérico se funda en la boca. Ahí, entre vetas, está el sabor. Y ahí estamos nosotros: con el cuchillo afilado, el queso a temperatura y la copa a punto.</p>
+      <ul class="facts">
+        <li><b>Lloret</b><span>Carrer de la Vila, 6 · al lado de la Iglesia</span></li>
+        <li><b>Blanes</b><span>Rambla de Joaquim Ruyra, 65</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ CORTA TÚ ============ -->
+  <section class="corte" id="corte">
+    <header class="sec-head">
+      <p class="kicker">I · Interactivo</p>
+      <h2 class="h2">Corta <em>tú</em></h2>
+      <p class="lead">Arrastra el cuchillo de lado a lado sobre la cara del jamón. Cada pasada es una loncha; llénale el plato a quien te acompañe.</p>
+    </header>
+    <div class="corte__stage">
+      <div class="corte__canvas" id="slicerWrap">
+        <canvas id="slicer" aria-label="Juego: cortar lonchas de jamón y emplatarlas" role="img"></canvas>
+        <p class="corte__hint" id="slicerHint"><i class="ph ph-hand-swipe-right"></i> Desliza sobre el jamón</p>
+      </div>
+      <aside class="corte__side">
+        <p class="corte__count"><b id="sliceN">0</b><span>/ <span id="sliceMax">15</span> lonchas</span></p>
+        <div class="corte__bar"><i id="sliceBar"></i></div>
+        <p class="corte__tip" id="sliceTip" aria-live="polite">La loncha perfecta es fina, casi transparente, y del tamaño de un bocado.</p>
+        <div class="corte__btns">
+          <button class="btn btn--meat" id="sliceBtn" type="button"><i class="ph ph-knife"></i><span>Cortar una loncha</span></button>
+          <button class="btn btn--line" id="plateBtn" type="button"><i class="ph ph-arrow-counter-clockwise"></i><span>Plato nuevo</span></button>
+        </div>
+        <p class="corte__note">Nosotros lo cortamos a cuchillo cada día, para tomar aquí o para llevar.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ EL PRECINTO ============ -->
+  <section class="precinto" id="precinto">
+    <header class="sec-head sec-head--row">
+      <div>
+        <p class="kicker">II · Escuela del ibérico</p>
+        <h2 class="h2">El color del <em>precinto</em></h2>
+      </div>
+      <p class="lead">Cada pata de ibérico lleva un precinto de color en la pezuña. Toca uno para saber qué esconde, y escúchalo contado desde el mostrador.</p>
+    </header>
+    <div class="precinto__grid">
+      <div class="seals" id="seals" role="tablist" aria-label="Colores del precinto"></div>
+      <article class="seal-card" id="sealCard" aria-live="polite">
+        <p class="seal-card__no" id="sealNo">01</p>
+        <h3 class="seal-card__t" id="sealT">—</h3>
+        <p class="seal-card__d" id="sealD">—</p>
+        <dl class="seal-card__dl" id="sealDl"></dl>
+      </article>
+      <figure class="phone phone--talk">
+        <video id="precVid" src="assets/video/precinto.mp4" poster="assets/img/v-precinto.jpg" playsinline loop muted preload="none" aria-label="Vídeo: los colores del precinto, explicados en Entre Vetes"></video>
+        <button class="phone__snd" type="button" data-snd="precVid" aria-label="Activar sonido"><i class="ph ph-speaker-slash"></i></button>
+        <figcaption>«Para gustos, los colores» · desde el mostrador</figcaption>
+      </figure>
+    </div>
+    <div class="tiro">
+      <figure class="phone phone--small">
+        <video id="tiroVid" src="assets/video/tirosina.mp4" poster="assets/img/v-tirosina.jpg" playsinline loop muted preload="none" aria-label="Vídeo: los puntos blancos del jamón"></video>
+        <button class="phone__snd" type="button" data-snd="tiroVid" aria-label="Activar sonido"><i class="ph ph-speaker-slash"></i></button>
+      </figure>
+      <div class="tiro__copy">
+        <p class="kicker">¿Puntitos blancos?</p>
+        <h3 class="h3">No es sal ni moho: es <em>tirosina</em></h3>
+        <p>Son pequeños cristales de un aminoácido que aparecen en los jamones de curación larga. Crujen un poco al morder y suelen ser buena señal. Nuestro vídeo más visto lo explica en treinta segundos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LA VITRINA ============ -->
+  <section class="vitrina" id="vitrina">
+    <header class="sec-head sec-head--row">
+      <div>
+        <p class="kicker">III · La vitrina</p>
+        <h2 class="h2">Lo que hay <em>tras el cristal</em></h2>
+      </div>
+      <p class="lead">Lo último que hemos enseñado en Instagram. Arrastra para pasar y toca una pieza para leer su historia.</p>
+    </header>
+    <div class="glass" id="glass">
+      <div class="glass__track" id="glassTrack"></div>
+    </div>
+    <div class="glass__ui">
+      <button class="round" id="glPrev" type="button" aria-label="Anterior"><i class="ph ph-arrow-left"></i></button>
+      <div class="glass__bar"><i id="glBar"></i></div>
+      <button class="round" id="glNext" type="button" aria-label="Siguiente"><i class="ph ph-arrow-right"></i></button>
+    </div>
+  </section>
+
+  <!-- ============ MOSTRADOR (vídeos) ============ -->
+  <section class="mostrador" id="mostrador">
+    <div class="mostrador__copy">
+      <p class="kicker">IV · Desde el mostrador</p>
+      <h2 class="h2">Cuchillo, <em>queso</em> y cuerda</h2>
+      <p class="lead">Así se trabaja detrás del mostrador. Lanza la tarjeta de arriba hacia un lado para ver la siguiente.</p>
+      <p class="deck__cap"><b id="deckNo">01</b><span id="deckCap">—</span></p>
+      <div class="deck__ui">
+        <button class="round" id="deckPrev" type="button" aria-label="Vídeo anterior"><i class="ph ph-arrow-left"></i></button>
+        <button class="round" id="deckNext" type="button" aria-label="Vídeo siguiente"><i class="ph ph-arrow-right"></i></button>
+        <a class="deck__tt" href="https://www.tiktok.com/@entrevetes" target="_blank" rel="noopener"><i class="ph ph-tiktok-logo"></i> @entrevetes</a>
+      </div>
+    </div>
+    <div class="deck" id="deck" aria-label="Vídeos del mostrador"></div>
+  </section>
+
+  <!-- ============ TERRAZA ============ -->
+  <section class="terraza" id="terraza">
+    <header class="sec-head">
+      <p class="kicker">V · Para tomar aquí</p>
+      <h2 class="h2">Una mesa <em>al lado de la Iglesia</em></h2>
+      <p class="lead">Dentro hay solo tres mesas y la terraza se llena: si venís en grupo, mejor llamar antes.</p>
+    </header>
+    <div class="terraza__grid">
+      <figure class="tz tz--1"><img src="assets/img/tabla-vino.jpg" alt="Tabla de embutidos ibéricos con tostadas y copa de vino tinto" loading="lazy"></figure>
+      <ol class="pizarra" aria-label="Lo que se pide en la terraza">
+        <li><b>Tabla de jamón y quesos</b><span>la más pedida, para compartir</span></li>
+        <li><b>Bocadillo de jamón ibérico</b><span>pan crujiente, a cuchillo</span></li>
+        <li><b>Bocadillo de queso manchego</b><span>con una copa de vino</span></li>
+        <li><b>Foie mi-cuit</b><span>en tostada</span></li>
+        <li><b>Burrata</b><span>cremosa, para empezar</span></li>
+        <li><b>Torreznos de Soria</b><span>si no los ves, pregunta</span></li>
+        <li><b>Salmón ahumado a cuchillo</b><span>con mantequilla Beppino Occelli</span></li>
+        <li><b>Vinos y cavas</b><span>tintos de Ribera, Extremadura y más</span></li>
+      </ol>
+      <figure class="tz tz--2"><img src="assets/img/tabla-quesos.jpg" alt="Tabla de jamón y queso con tostadas en la terraza" loading="lazy"></figure>
+      <div class="terraza__call">
+        <p>Precios y disponibilidad, en la tienda.</p>
+        <a class="btn btn--meat" href="tel:+34672785502"><i class="ph ph-phone"></i><span>672 78 55 02</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESEÑAS ============ -->
+  <section class="resenas">
+    <p class="resenas__big"><b>4,8</b><span>★★★★★</span><small>241 reseñas en Google</small></p>
+    <div class="quotes" id="quotes">
+      <blockquote class="q is-on"><p>«Imprescindible para tomar algo en el mismísimo centro, al lado de la Iglesia. La tabla de jamón y quesos variados, muy recomendable.»</p></blockquote>
+      <blockquote class="q"><p>«Somos italianos, así que teníamos expectativas muy altas. Este lugar las superó: la mejor jamonería de Lloret, sin duda.»</p></blockquote>
+      <blockquote class="q"><p>«La tabla de embutidos muy generosa y buena, la burrata deliciosa y el pan súper crujiente.»</p></blockquote>
+      <blockquote class="q"><p>«Unos bocatas de jamón ibérico espectaculares, y nos dieron a probar un queso de oveja con trufa blanca.»</p></blockquote>
+    </div>
+    <div class="quotes__dots" id="qDots"></div>
+  </section>
+
+  <!-- ============ VISITA ============ -->
+  <section class="visita" id="visita">
+    <div class="visita__copy">
+      <p class="kicker">VI · Visítanos</p>
+      <h2 class="h2">Carrer de la Vila, <em>6</em></h2>
+      <p class="lead">En pleno centro de Lloret de Mar, a un paso de la Iglesia de Sant Romà.</p>
+      <table class="hours" id="hours" aria-label="Horario">
+        <tbody>
+          <tr data-d="1"><th>Lunes</th><td>9:00–13:30 · 17:00–21:00</td></tr>
+          <tr data-d="2"><th>Martes</th><td>9:00–13:30 · 17:00–21:00</td></tr>
+          <tr data-d="3"><th>Miércoles</th><td>9:00–13:30 · 17:00–21:00</td></tr>
+          <tr data-d="4"><th>Jueves</th><td>9:00–13:30 · 17:00–21:00</td></tr>
+          <tr data-d="5"><th>Viernes</th><td>9:00–14:00 · 17:00–22:00</td></tr>
+          <tr data-d="6"><th>Sábado</th><td>9:00–14:00 · 17:00–22:00</td></tr>
+          <tr data-d="0"><th>Domingo</th><td>Cerrado</td></tr>
+        </tbody>
+      </table>
+      <span class="live live--big" data-live><i></i><span data-live-text>Horario</span></span>
+      <ul class="contact">
+        <li><i class="ph ph-phone"></i><a href="tel:+34672785502">672 78 55 02</a></li>
+        <li><i class="ph ph-instagram-logo"></i><a href="https://www.instagram.com/entrevetes/" target="_blank" rel="noopener">@entrevetes</a></li>
+        <li><i class="ph ph-storefront"></i><span>También en Blanes · Rambla de Joaquim Ruyra, 65</span></li>
+      </ul>
+    </div>
+    <figure class="visita__pic"><img src="assets/img/iglesia.jpg" alt="La Iglesia de Sant Romà de Lloret de Mar, a pocos pasos de Entre Vetes" loading="lazy"></figure>
+    <div class="visita__map"><iframe title="Mapa: Entre Vetes, Carrer de la Vila 6, Lloret de Mar" src="https://maps.google.com/maps?q=Entre%20Vetes%2C%20Carrer%20de%20la%20Vila%206%2C%20Lloret%20de%20Mar&z=17&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p class="foot__big" aria-hidden="true">Entre vetes</p>
+  <div class="foot__row">
+    <span>Entre Vetes · Pernileria delicatessen · Carrer de la Vila, 6 · Lloret de Mar</span>
+    <span>Fotos: Instagram @entrevetes y Google · Vídeos: TikTok @entrevetes</span>
+  </div>
+</footer>
+
+<!-- visor -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Vista ampliada" hidden>
+  <figure class="lb__fig"><img id="lbImg" alt=""><figcaption><b id="lbT"></b><span id="lbD"></span></figcaption></figure>
+  <button class="lb__close" type="button" aria-label="Cerrar"><i class="ph ph-x"></i></button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
